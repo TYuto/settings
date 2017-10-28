@@ -1,0 +1,11 @@
+i3
+git
+curl
+vim
+zsh
+python-pip
+ibus-mozc
+net-tools
+libappindicator1
+tree
+

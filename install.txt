@@ -8,4 +8,5 @@ ibus-mozc
 net-tools
 libappindicator1
 tree
-
+xrandr
+gparted

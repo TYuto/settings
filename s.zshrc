@@ -20,7 +20,6 @@ function emacs (){
 
 ZSH_THEME="gnzh"
 
-CASE_SENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"

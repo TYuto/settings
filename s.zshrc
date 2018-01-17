@@ -7,6 +7,9 @@ function hoge (){
     if ! [ `echo $1 | grep 'zshrc'` ] ; then
         editor $1
     else
+        if ! [ `echo $1 | grep 'bashrc'` ] ; then
+            editor $1
+        else
         python ~/.warn
 	i3lock
     fi

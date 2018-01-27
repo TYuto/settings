@@ -49,3 +49,6 @@ repo = 'osyo-manga/vim-watchdogs'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'

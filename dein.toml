@@ -29,3 +29,23 @@ on_ft = 'python'
 repo = 'Shougo/neocomplete.vim'
 insert = 1 
 
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'osyo-manga/vim-watchdogs'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'

@@ -24,28 +24,14 @@ set runtimepath+=/home/yuto/.vim/./plug/dein/repos/github.com/Shougo/dein.vim
 " Required:
 if dein#load_state('/home/yuto/.vim/./plug/dein')
   call dein#begin('/home/yuto/.vim/./plug/dein')
-
   " Let dein manage dein
   " Required:
   call dein#add('/home/yuto/.vim/./plug/dein/repos/github.com/Shougo/dein.vim')
-
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('nathanaelkane/vim-indent-guides') 
-  call dein#add('tomasr/molokai')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('osyo-manga/vim-watchdogs')
-  call dein#add('vim-airline/vim-airline-themes')
   " プラグインリストを収めたTOMLファイル
   let g:dein_dir = expand('~/.vim/plug/dein')
   let s:toml = g:dein_dir . '/dein.toml'
-  let s:lazy_toml = g:dein_dir . '/dein_lazy.toml'
-
   " TOMLファイルにpluginを記述
   call dein#load_toml(s:toml, {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
-  
   " Required:
   call dein#end()
   call dein#save_state()

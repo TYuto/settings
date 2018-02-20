@@ -21,6 +21,10 @@ function emacs (){
     hoge $1
 }
 
+function cpf(){
+    cat $1 | xsel --clipboard --input
+}
+
 ZSH_THEME="gnzh"
 
 DISABLE_AUTO_TITLE="true"

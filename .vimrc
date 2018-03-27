@@ -1,52 +1,42 @@
-set fenc=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fenc=utf-8 
+syntax on
 set number
 set ruler
-set showmatch
 set autoindent
 inoremap <silent> jj <Esc>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
+vnoremap  <Up>     <nop>
+vnoremap  <Down>   <nop>
+vnoremap  <Left>   <nop>
+vnoremap  <Right>  <nop>
+inoremap  <Up>     <nop>
+inoremap  <Down>   <nop>
+inoremap  <Left>   <nop>
+inoremap  <Right>  <nop>
+noremap   <Up>     <nop>
+noremap   <Down>   <nop>
+noremap   <Left>   <nop>
+noremap   <Right>  <nop>
 set expandtab
 set tabstop=4
 set shiftwidth=4
-syntax on
 
 
-
-"dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
+
 " Required:
-set runtimepath+=/home/yuto/.vim/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/repos/github.com/Shougo/dein.vim
+
 " Required:
-if dein#load_state('/home/yuto/.vim')
-  call dein#begin('/home/yuto/.vim')
+if dein#load_state('~/.vim')
+  call dein#begin('~/.vim/')
   " Let dein manage dein
   " Required:
-  call dein#add('/home/yuto/.vim/repos/github.com/Shougo/dein.vim')
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('nathanaelkane/vim-indent-guides')
-  call dein#add('tomasr/molokai')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('osyo-manga/vim-watchdogs')
-  call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('Lokaltog/vim-powerline')
-  call dein#add('airblade/vim-gitgutter')
-
+  call dein#add('~/.vim/repos/github.com/Shougo/dein.vim')
   let g:dein_dir = expand('~/.vim/dein')
   let s:toml = g:dein_dir . '/dein.toml'
-  let s:lazy_toml = g:dein_dir . '/dein_lazy.toml'
-  " TOMLファイルにpluginを記述
-  call dein#load_toml(s:toml, {'lazy': 0}) 
-  call dein#load_toml(s:lazy_toml, {'lazy': 1}) 
-
-  " You can specify revision/branch/tag.
+  call dein#load_toml(s:toml, {'lazy': 0})
   " Required:
   call dein#end()
   call dein#save_state()
@@ -60,11 +50,8 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
-"End dein Scripts-------------------------
 
 
-
-command! AirlineRefresh call airline#load_theme() | call airline#update_statusline() | call airline#load_theme() | call airline#update_statusline()
 autocmd FileType python setlocal completeopt-=preview
 colorscheme molokai
 let g:indent_guides_enable_on_vim_startup = 1

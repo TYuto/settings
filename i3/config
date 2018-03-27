@@ -41,9 +41,9 @@ bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
 
-set $ws1 ""
-set $ws2 ""
-set $ws3 ""
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
 
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -94,3 +94,4 @@ bar {
 
 bindsym $mod+l+o exec i3lock
 exec feh --bg-scale ~/Pictures/wallpaper.jpg 
+exec compton

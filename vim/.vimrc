@@ -60,3 +60,9 @@ set ts=4 sw=4 et
 let g:indent_guides_start_lecel = 2
 let g:indent_guides_guide_size = 1
 
+
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none 

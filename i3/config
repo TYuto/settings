@@ -89,7 +89,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-        status_command i3status
+    status_command i3status
+    position top
+    colors {
+    statusline    #ffffff
+    background    #000000
+    separator     #000000ff
+      #                  BORDER      BACKGROUND    TEXT
+    focused_workspace   #00000000    #00000000   #c6ff00
+    inactive_workspace  #00000000    #00000000   #dddddd
+    active_workspace    #00000000    #00000000   #ffffff
+    urgent_workspace    #b71c1c      #b71c1c     #00000000
+    binding_mode        #b71c1c      #b71c1c     #00000000
+  }  
 }
 
 bindsym $mod+l+o exec i3lock

@@ -19,3 +19,4 @@ sudo dnf copr enable mrbloups/compton
 sudo dnf install compton
 sudo yum install htop
 
+dnf install dbus-devle #for i3status-rs

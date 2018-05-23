@@ -49,6 +49,7 @@ format_swap = "{SUp}%"
 [[block]]
 block = "cpu"
 interval = 1
+frequency = true
 
 [[block]]
 block = "time"
